@@ -40,7 +40,7 @@ int main(){
 				exitToken = true;
 				break;
 
-			default:	//default also seeds genrator with time function
+			default:
 				std::cout << "Sorry, Invalid input. Please try again.\n=>";
 				std::cin.ignore(INT_MAX,'\n');
 				std::cin.get(answer);
@@ -59,6 +59,7 @@ int main(){
 			case 'Y':	//y cases allows user to number generator
 			case 'y':
 				std::cout << "Please enter number\n=> ";
+				std::cin.ignore(INT_MAX,'\n');
 				std::cin >> dieFaces;
 				dice = new aDie(dieFaces);
 				graph = new aHistogram(dieFaces);
@@ -73,7 +74,7 @@ int main(){
 				exitToken = true;
 				break;
 
-			default:	//default also seeds genrator with time function
+			default:
 				std::cout << "Sorry, Invalid input. Please try again.\n=>";
 				std::cin.ignore(INT_MAX,'\n');
 				std::cin.get(answer);
