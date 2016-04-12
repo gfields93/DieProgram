@@ -89,9 +89,9 @@ int main(){
 
 		graph->display(atoi(maxLength));	//displayes histogram
 		std::cout << std::endl;
-		std::cout << "Do you wish to run experiment again? (Press q to quit)" << std::endl; //prompt to run experiment agin
-		std::cout << "Press any other key to continue." << std::endl;
-		std::cin.get(tryAgain);
+		std::cout << "Do you wish to run experiment again? (Press q to quit)\n"; //prompt to run experiment agin
+		std::cout << "Press any other key to continue.\n=>";
+		std::cin >> tryAgain;
 		std::cin.ignore(INT_MAX,'\n');
 		delete dice;
 		delete graph;
